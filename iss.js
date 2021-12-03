@@ -71,9 +71,9 @@ const nextISSTimesForMyLocation = function(callback) {
           callback(error, null);
         }
         callback(null, passTimes);
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};
 
 module.exports = { fetchMyIP, fetchCoordsByIP, fetchISSFlyoverTimes, nextISSTimesForMyLocation };
